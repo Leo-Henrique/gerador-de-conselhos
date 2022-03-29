@@ -17,13 +17,24 @@
 
 
     <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Gerador de conselhos">
+    <meta name="application-name" content="Gerador de conselhos">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- FIM -->
 
 
     <!-- METADADOS -->
     <link rel="canonical" href="https://leo-henrique.github.io/gerador-de-conselhos/" />
     <meta name="author" content="Leonardo Henrique" />
-    <meta name="description" content="Desafio do Frontend Mentor com o objetivo de clonar da forma mais semelhante possível este design de turismo espacial. Solucionado por Leonardo Henrique." />
+    <meta name="description" content="Desafio simples do Frontend Mentor para interagir com a API Advice Slip para gerar conselhos aleatórios. Solucionado por Leonardo Henrique." />
     <meta name="generator" content="Visual Studio Code" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
@@ -32,11 +43,11 @@
         <meta name="og:locale" content="pt_BR" />
         <meta name="og:type" content="website" />
         <meta name="og:site_name" content="website" />
-        <meta name="og:title" content="" />
-        <meta name="og:description" content="" />
+        <meta name="og:title" content="Gerador de conselhos | Leonardo Henrique" />
+        <meta name="og:description" content="Desafio simples do Frontend Mentor para interagir com a API Advice Slip para gerar conselhos aleatórios. Solucionado por Leonardo Henrique." />
         <meta name="og:url" content="https://leo-henrique.github.io/gerador-de-conselhos/" />
-        <meta name="og:image" content="" /> <!-- logo em 300x300, PNG | URL absoluto do site com HTTPS e o caminho da imagem -->
-        <meta name="og:image:alt" content="" />
+        <meta name="og:image" content="https://leo-henrique.github.io/gerador-de-conselhos/images/favicon/og-image.png" />
+        <meta name="og:image:alt" content="Favicon do site" />
         <!-- FIM -->
     <!-- FIM -->
 
@@ -47,11 +58,14 @@
     <main class="advice">
         <h1 class="advice-title">
             Conselho 
-            <span>#000</span>
+            <span id="adviceNumber">
+                #000
+            </span>
         </h1>
 
-        <blockquote class="advice-quote">
-            It is easy to sit up and take notice, what's difficult is getting up and taking action.
+        <blockquote class="advice-quote"
+        lang="en-us"
+        translate="yes">
         </blockquote>
 
         <div class="advice-separator">
