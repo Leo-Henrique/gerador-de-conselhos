@@ -1,0 +1,108 @@
+body {
+    background-color: $support-dark-3;
+    font-family: "Manrope", sans-serif;
+    font-size: $body;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advice {
+    max-width: 530px;
+    margin: 0 15px;
+    background-color: $support-dark-2;
+    box-shadow: 0 5px 15px 1px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    padding: 4rem;
+    text-align: center;
+    position: relative;
+
+    &-title {
+        color: $primary;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+    }
+    &-quote {
+        quotes: auto;
+        @include font-size($quote);
+        color: $support-light-1;
+        line-height: 1.45;
+
+        &::before {
+            content: open-quote;
+        }
+        &::after {
+            content: close-quote;
+        }
+    }
+    &-separator {
+        margin: 3rem 0;
+    }
+    &-separator > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 8px;
+        
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            flex: 1;
+            height: 1px;
+            background-color: $support-dark-1;
+        }
+        &::before {
+            margin-right: 8px;
+        }
+        &::after {
+            margin-left: 8px;
+        }
+        span {
+            display: inline-block;
+            width: 6px;
+            height: 16px;
+            border-radius: 3px;
+            background-color: $support-light-1;
+        }
+    }
+    &-btn {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -30px;
+        cursor: pointer;
+        transition-property: box-shadow background-color;
+        transition-duration: 200ms; 
+        transition-timing-function: ease-in-out;
+
+        @media not all and (hover: none) {
+            &:hover {
+                box-shadow: 0 0 35px 0px rgba(82, 255, 168, 0.7);
+            }
+        }
+        &:active {
+            background-color: rgba(82, 255, 168, 0.7);
+        }
+    }
+}
+
+@media (max-width: 575.98px) {
+    body {
+        font-size: $body-sm;
+    }
+    .advice {
+        padding: 4rem 3rem;
+    }
+}
