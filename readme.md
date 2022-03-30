@@ -1,4 +1,4 @@
-# Desafio do Frontend Mentor | Turismo Espacial
+# Desafio do Frontend Mentor | Gerador de conselhos
 
 Este desafio pelo Frontend Mentor consistia em desenvolver este gerador de conselhos utilizando a API Advice Slip. Apesar de muito simples, é super interessante para um começo em interações com APIs externas.
 
